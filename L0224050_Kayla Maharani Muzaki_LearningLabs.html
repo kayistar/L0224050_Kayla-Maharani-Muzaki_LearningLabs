@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NCT DREAM FAN WEB</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#205b31',
+                        secondary: '#fefbd8',
+                    },
+                    fontFamily: {
+                        title: ['Black Han Sans', 'sans-serif'],
+                        korean: ['Noto Sans KR', 'sans-serif'],
+                        main: ['Poppins', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .korean-text {
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-blue-50 text-gray-800 font-main">
+    
+    <nav class="bg-primary p-4">
+        <div class="container mx-auto flex justify-center space-x-6">
+            <a href="#" onclick="showPage('index')" class="font-korean font-bold text-secondary hover:bg-green-700 px-4 py-2 rounded-full transition duration-300">HOME</a>
+            <a href="#" onclick="showPage('content')" class="font-korean font-bold text-secondary hover:bg-green-700 px-4 py-2 rounded-full transition duration-300">MEMBERS</a>
+            <a href="#" onclick="showPage('feedback')" class="font-korean font-bold text-secondary hover:bg-green-700 px-4 py-2 rounded-full transition duration-300">FEEDBACK</a>
+        </div>
+    </nav>
+
+    <div id="pages">
+        
+        <div id="index" class="container mx-auto px-4 py-8">
+            <h1 class="font-title text-5xl text-primary text-center mb-4">NCT DREAM</h1>
+            <p class="font-korean text-2xl text-center text-gray-600 mb-8">엔시티 드림</p>
+            <img src="img/NCT DREAM LOGO.jpeg" alt="NCT DREAM Logo" class="mx-auto max-w-xs mb-8">
+            <p class="text-justify max-w-3xl mx-auto leading-relaxed">
+                NCT DREAM (엔씨티 DREAM) is the 3rd sub-unit of the boy group NCT under SM Entertainment. The sub-unit consists of 7 members: Mark, Renjun, Jeno, Haechan, Chenle, Jaemin, and Jisung. They debuted on August 25, 2016, with their first single, Chewing Gum. They made their Japanese debut on February 8, 2023, with their first single, Best Friend Ever.
+            </p>
+        </div>
+
+        
+        <div id="content" class="container mx-auto px-4 py-8 hidden">
+            <h1 class="font-title text-5xl text-primary text-center mb-2">NCT DREAM MEMBERS</h1>
+            <p class="font-korean text-2xl text-center text-gray-600 mb-8">멤버들</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                
+                <div class="bg-secondary rounded-xl p-6 shadow-md transform hover:scale-105 transition duration-300">
+                    <img src="img/MARK.jpeg" alt="Mark" class="w-48 h-48 object-cover rounded-full mx-auto mb-4">
+                    <h3 class="font-title text-2xl text-primary mb-1">MARK</h3>
+                    <p class="font-korean text-sm text-gray-600 mb-2">마크</p>
+                    <p class="text-sm">
+                        Position: Leader, Main Rapper, Lead Dancer<br>
+                        Birth: August 2, 1999
+                    </p>
+                </div>
+                
+                <div class="bg-secondary rounded-xl p-6 shadow-md transform hover:scale-105 transition duration-300">
+                    <img src="img/RENJUN.jpeg" alt="Renjun" class="w-48 h-48 object-cover rounded-full mx-auto mb-4">
+                    <h3 class="font-title text-2xl text-primary mb-1">RENJUN</h3>
+                    <p class="font-korean text-sm text-gray-600 mb-2">런쥔</p>
+                    <p class="text-sm">
+                        Position: Main Vocalist<br>
+                        Birth: March 23, 2000
+                    </p>
+                </div>
+                
+                <div class="bg-secondary rounded-xl p-6 shadow-md transform hover:scale-105 transition duration-300">
+                    <img src="img/JENO.jpeg" alt="Jeno" class="w-48 h-48 object-cover rounded-full mx-auto mb-4">
+                    <h3 class="font-title text-2xl text-primary mb-1">JENO</h3>
+                    <p class="font-korean text-sm text-gray-600 mb-2">제노</p>
+                    <p class="text-sm">
+                        Position: Lead Dancer, Lead Rapper<br>
+                        Birth: April 23, 2000
+                    </p>
+                </div>
+                
+                <div class="bg-secondary rounded-xl p-6 shadow-md transform hover:scale-105 transition duration-300">
+                    <img src="img/HAECHAN.jpeg" alt="Haechan" class="w-48 h-48 object-cover rounded-full mx-auto mb-4">
+                    <h3 class="font-title text-2xl text-primary mb-1">HAECHAN</h3>
+                    <p class="font-korean text-sm text-gray-600 mb-2">해찬</p>
+                    <p class="text-sm">
+                        Position: Main Vocalist<br>
+                        Birth: June 6, 2000
+                    </p>
+                </div>
+                
+                <div class="bg-secondary rounded-xl p-6 shadow-md transform hover:scale-105 transition duration-300">
+                    <img src="img/JAEMIN.jpeg" alt="Jaemin" class="w-48 h-48 object-cover rounded-full mx-auto mb-4">
+                    <h3 class="font-title text-2xl text-primary mb-1">JAEMIN</h3>
+                    <p class="font-korean text-sm text-gray-600 mb-2">재민</p>
+                    <p class="text-sm">
+                        Position: Lead Rapper, Lead Dancer<br>
+                        Birth: August 13, 2000
+                    </p>
+                </div>
+                
+                <div class="bg-secondary rounded-xl p-6 shadow-md transform hover:scale-105 transition duration-300">
+                    <img src="img/CHENLE.jpeg" alt="Chenle" class="w-48 h-48 object-cover rounded-full mx-auto mb-4">
+                    <h3 class="font-title text-2xl text-primary mb-1">CHENLE</h3>
+                    <p class="font-korean text-sm text-gray-600 mb-2">천러</p>
+                    <p class="text-sm">
+                        Position: Main Vocalist<br>
+                        Birth: November 22, 2001
+                    </p>
+                </div>
+                
+                <div class="bg-secondary rounded-xl p-6 shadow-md transform hover:scale-105 transition duration-300">
+                    <img src="img/JISUNG.jpeg" alt="Jisung" class="w-48 h-48 object-cover rounded-full mx-auto mb-4">
+                    <h3 class="font-title text-2xl text-primary mb-1">JISUNG</h3>
+                    <p class="font-korean text-sm text-gray-600 mb-2">지성</p>
+                    <p class="text-sm">
+                        Position: Main Dancer<br>
+                        Birth: February 5, 2002
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        
+        <div id="feedback" class="container mx-auto px-4 py-8 hidden">
+            <h1 class="font-title text-5xl text-primary text-center mb-2">FEEDBACK</h1>
+            <p class="font-korean text-2xl text-center text-gray-600 mb-8">피드백</p>
+            <form class="max-w-lg mx-auto bg-secondary p-6 rounded-xl shadow-md" onsubmit="return submitFeedback(event)">
+                <div class="mb-4">
+                    <label for="name" class="block text-sm font-medium text-gray-700 mb-2">Name:</label>
+                    <input type="text" id="name" required class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary">
+                </div>
+                <div class="mb-4">
+                    <label for="feedback" class="block text-sm font-medium text-gray-700 mb-2">Your Feedback:</label>
+                    <textarea id="feedback" rows="5" required class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-primary text-secondary py-2 px-4 rounded-md hover:bg-green-700 transition duration-300 font-korean font-bold">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <footer class="bg-primary text-secondary text-center py-6 mt-12 font-main">
+        | Learning Labs 2024 | L0224050 | Kayla Maharani M. |
+    </footer>
+
+    <script>
+        function showPage(pageId) {
+            document.querySelectorAll('.container').forEach(section => {
+                section.classList.add('hidden');
+            });
+            document.getElementById(pageId).classList.remove('hidden');
+        }
+
+        function submitFeedback(event) {
+            event.preventDefault();
+            const name = document.getElementById('name').value;
+            const feedback = document.getElementById('feedback').value;
+            
+            alert(`Thank you for your feedback, ${name}^-^`);
+            
+            document.getElementById('name').value = '';
+            document.getElementById('feedback').value = '';
+        }
+    </script>
+</body>
+</html>
