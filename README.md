@@ -7,13 +7,9 @@ nama-project
 ── index.html            
 ── content.html          
 ── feedback.html        
-── css/
-   └── styles.css        
-
-── js/
-   └── script.js        
-
-└── images/
+── css/ (styles.css)       
+── js/ (script.js)       
+── images/
 
 # Fitur
 Fitur yang disediakan di website tersebut adalah :
