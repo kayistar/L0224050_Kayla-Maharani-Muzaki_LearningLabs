@@ -3,18 +3,16 @@
 Project ini dibuat sebagai project akhir Learning Labs 2024. Website yang saya buat adalah sebuah website NCT DREAM yang menyediakan informasi tentang grup, profil dan anggotanya.
 
 # Struktur Project
-nama-project/
-│
-├── index.html            
-├── content.html          
-├── feedback.html        
-│
-├── css/
-│   └── styles.css        
-│
-├── js/
-│   └── script.js        
-│
+nama-project
+── index.html            
+── content.html          
+── feedback.html        
+── css/
+   └── styles.css        
+
+── js/
+   └── script.js        
+
 └── images/
 
 # Fitur
